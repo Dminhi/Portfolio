@@ -63,7 +63,7 @@ const About = () => {
           </Fade>
           <Fade in={true} timeout={3000}>
             <a
-              href="https://dminhi.github.io/"
+              href="https://dminhi.github.io/Portfolio.github.io/CV_Nguyen_Duy_Minh_Fullstack_Developer.pdf"
               className="bg-cyan-400 text-white px-6 py-2 rounded-full hover:bg-cyan-500 transition duration-300"
             >
               More About Me
@@ -75,7 +75,7 @@ const About = () => {
             <img
               src="./IMG_1181.jpg"
               alt="Profile"
-              className="object-cover rounded-full w-[450px] h-[450px] mx-auto shadow-lg"
+              className="object-cover rounded-full lg:w-[450px] lg:h-[450px] md:w-[200px] md:h-[200px] mx-auto shadow-lg"
             />
           </div>
         </Fade>

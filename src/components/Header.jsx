@@ -15,7 +15,7 @@ const Header = () => {
             height={"80px"}
             alt=""
           />
-          <div className="text-4xl font-bold cursor-pointer mr-10">
+          <div className="sm:hidden md:hidden text-4xl font-bold cursor-pointer mr-10">
             Portfolio
           </div>
         </div>
