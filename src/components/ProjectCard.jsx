@@ -6,7 +6,7 @@ const ProjectCard = ({ project }) => {
       <img
         src={project.image}
         alt={project.title}
-        className="w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 object-cover"
+        className="h-full sm:h-48 md:h-54 lg:h-60 xl:h-66 object-content"
       />
       <div className="p-4 sm:p-6 md:p-8">
         <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">

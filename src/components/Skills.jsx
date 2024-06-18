@@ -78,7 +78,7 @@ const Skills = () => {
               whileHover="hover"
             >
               <motion.div
-                className="mb-4"
+                className="mb-4 flex justify-center"
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}

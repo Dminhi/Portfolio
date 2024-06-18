@@ -1,5 +1,6 @@
 import { FaJava, FaMobileAlt, FaNodeJs, FaReact } from "react-icons/fa";
 
+import PublicIcon from "@mui/icons-material/Public";
 import { motion } from "framer-motion";
 
 const services = [
@@ -50,7 +51,9 @@ const Services = () => {
               variants={serviceCardVariants}
               whileHover="hover"
             >
-              <div className="mb-4 text-5xl">{service.icon}</div>
+              <div className="mb-4 text-5xl flex justify-center">
+                {service.icon}
+              </div>
               <h3 className="text-xl font-semibold mb-4">{service.title}</h3>
               <p className="mb-6">{service.description}</p>
             </motion.div>
