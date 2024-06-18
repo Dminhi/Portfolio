@@ -20,16 +20,20 @@ const Header = () => {
     <header className="bg-gray-900 text-white fixed w-full z-10 shadow-lg top-0 header-animation">
       <nav className="container w-full bg-gray-900 flex justify-between items-center py-4 px-6 md:px-12">
         <div className="flex items-center">
-          <img
-            className="mr-5 rounded-full"
-            src="/My_Logo.png"
-            width={"80px"}
-            height={"80px"}
-            alt="Logo"
-          />
-          <div className="hidden sm:block text-4xl font-bold cursor-pointer mr-10">
-            Portfolio
-          </div>
+          <Link to="about">
+            <img
+              className="mr-5 rounded-full"
+              src="/My_Logo.png"
+              width={"80px"}
+              height={"80px"}
+              alt="Logo"
+            />
+          </Link>
+          <Link to="about">
+            <div className="hidden sm:block text-4xl font-bold cursor-pointer mr-10">
+              Portfolio
+            </div>
+          </Link>
         </div>
 
         <div className="flex items-center sm:hidden">
