@@ -15,3 +15,7 @@ header {
     margin: auto;
     top: -2em;
 }
+
+.ant-drawer-close {
+    color: white !important;
+}

@@ -7,30 +7,31 @@ import React from "react";
 const About = () => {
   const renderLetters = (text) => {
     return text.split("").map((char, index) => (
-      <pre key={index} className="letter">
+      <pre key={index} className="letter inline-block">
         {char}
       </pre>
     ));
   };
+
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center mx-8 justify-center bg-gray-800 text-white"
+      className="min-h-screen flex items-center justify-center bg-gray-800 text-white p-8"
     >
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 text-center md:text-left md:pr-8">
           <Fade in={true} timeout={1000}>
-            <h2 className="text-5xl font-bold mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               {renderLetters("Hello, It's me Minh")}
             </h2>
           </Fade>
           <Fade in={true} timeout={1500}>
-            <h3 className="text-3xl font-semibold mb-4">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">
               I'm a <span className="text-cyan-400">Web Developer</span>
             </h3>
           </Fade>
           <Fade in={true} timeout={2000}>
-            <p className="mb-4 text-2xl">
+            <p className="mb-4 text-lg sm:text-xl md:text-2xl">
               I am a Full Stack web developer based in Hanoi, Vietnam. I use
               Japanese as my second language after my native tongue. I can
               create a complete Website according to your requirements
@@ -40,6 +41,7 @@ const About = () => {
             <div className="flex justify-center md:justify-start space-x-4 mb-4">
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.facebook.com/minh.nhi.5"
                 className="text-cyan-400 hover:text-cyan-300"
               >
@@ -47,6 +49,7 @@ const About = () => {
               </a>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.instagram.com/d.minhi?fbclid=IwZXh0bgNhZW0CMTAAAR0cdSkMpA5P0NzOgAoPCAI4y2682zRxJsRYIzSmHirYgBH_tL5F_iQqK-A_aem_1pwwnZG56MIOLAN9o8ucHQ"
                 className="text-cyan-400 hover:text-cyan-300"
               >
@@ -54,6 +57,7 @@ const About = () => {
               </a>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://github.com/Dminhi?tab=repositories"
                 className="text-cyan-400 hover:text-cyan-300"
               >
@@ -75,7 +79,7 @@ const About = () => {
             <img
               src="./IMG_1181.jpg"
               alt="Profile"
-              className="object-cover rounded-full lg:w-[450px] lg:h-[450px] md:w-[200px] md:h-[200px] mx-auto shadow-lg"
+              className="object-cover rounded-full w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[450px] lg:h-[450px] mx-auto shadow-lg"
             />
           </div>
         </Fade>
