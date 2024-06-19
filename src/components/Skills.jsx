@@ -91,6 +91,7 @@ const Skills = () => {
           .skills-container {
             display: flex;
             overflow-x: auto;
+            overflow-y: hidden;
             gap: 1rem;
           }
           .skills-container > div {
