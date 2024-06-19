@@ -23,34 +23,12 @@ export default function Education() {
         </div>
         <Timeline position="alternate">
           <TimelineItem>
-            <TimelineOppositeContent
-              sx={{ m: "auto 0" }}
-              align="right"
-              variant="h6"
-            >
-              2010/07
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineConnector />
-              <TimelineDot>
-                <LocalLibraryIcon color="primary" />
-              </TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6" component="span">
-                Study
-              </Typography>
-              <Typography>Study at Viet Nam Trade Union University</Typography>
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
             <TimelineOppositeContent sx={{ m: "auto 0" }} variant="h6">
-              2014/05
+              2024/07
             </TimelineOppositeContent>
             <TimelineSeparator>
-              <TimelineConnector />
-              <TimelineDot color="primary">
+              <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+              <TimelineDot color="secondary">
                 <SchoolIcon />
               </TimelineDot>
               <TimelineConnector />
@@ -59,9 +37,11 @@ export default function Education() {
               <Typography variant="h6" component="span">
                 Graduate
               </Typography>
-              <Typography>Major: Labour Safety</Typography>
+              <Typography>Backend: Java</Typography>
+              <Typography>FrontEnd: Html, Css, Javascript </Typography>
             </TimelineContent>
           </TimelineItem>
+
           <TimelineItem>
             <TimelineOppositeContent sx={{ m: "auto 0" }} variant="h6">
               2023/11
@@ -82,11 +62,11 @@ export default function Education() {
           </TimelineItem>
           <TimelineItem>
             <TimelineOppositeContent sx={{ m: "auto 0" }} variant="h6">
-              2024/07
+              2014/05
             </TimelineOppositeContent>
             <TimelineSeparator>
-              <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-              <TimelineDot color="secondary">
+              <TimelineConnector />
+              <TimelineDot color="primary">
                 <SchoolIcon />
               </TimelineDot>
               <TimelineConnector />
@@ -95,8 +75,30 @@ export default function Education() {
               <Typography variant="h6" component="span">
                 Graduate
               </Typography>
-              <Typography>Backend: Java</Typography>
-              <Typography>FrontEnd: Html, Css, Javascript </Typography>
+              <Typography>Major: Labour Safety</Typography>
+            </TimelineContent>
+          </TimelineItem>
+
+          <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0" }}
+              align="right"
+              variant="h6"
+            >
+              2010/07
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot>
+                <LocalLibraryIcon color="primary" />
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <Typography variant="h6" component="span">
+                Study
+              </Typography>
+              <Typography>Study at Viet Nam Trade Union University</Typography>
             </TimelineContent>
           </TimelineItem>
         </Timeline>

@@ -1,13 +1,8 @@
 import {
   FaBook,
-  FaComment,
   FaDatabase,
   FaHtml5,
   FaJava,
-  FaLeaf,
-  FaMobileAlt,
-  FaNetworkWired,
-  FaNodeJs,
   FaReact,
   FaTeamspeak,
 } from "react-icons/fa";
@@ -41,7 +36,7 @@ const skills = [
     icon: <FaDatabase size={40} className="text-cyan-400" />,
   },
   {
-    title: "EngLish & Japanese",
+    title: "English & Japanese",
     description:
       "Can use English and Japanese for communication and reading documents.",
     icon: <FaBook size={40} className="text-cyan-400" />,
@@ -65,7 +60,7 @@ const Skills = () => {
     <section id="skills" className="py-20 bg-gray-800 text-white">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12">My Skills</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="skills-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {skills.map((skill, index) => (
             <motion.div
               key={index}
@@ -91,6 +86,18 @@ const Skills = () => {
           ))}
         </div>
       </div>
+      <style jsx>{`
+        @media (max-width: 640px) {
+          .skills-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 1rem;
+          }
+          .skills-container > div {
+            flex: 0 0 80%;
+          }
+        }
+      `}</style>
     </section>
   );
 };

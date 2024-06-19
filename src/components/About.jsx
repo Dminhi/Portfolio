@@ -6,9 +6,9 @@ import React from "react";
 
 const About = () => {
   const renderLetters = (text) => {
-    return text.split("").map((char, index) => (
+    return text.split(" ").map((char, index) => (
       <pre key={index} className="letter inline-block">
-        {char}
+        {char + " "}
       </pre>
     ));
   };
@@ -22,7 +22,7 @@ const About = () => {
         <div className="md:w-1/2 text-center md:text-left md:pr-8">
           <Fade in={true} timeout={1000}>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-              {renderLetters("Hello, It's me Minh")}
+              {renderLetters("Hello!,I'm Minh")}
             </h2>
           </Fade>
           <Fade in={true} timeout={1500}>
@@ -33,8 +33,8 @@ const About = () => {
           <Fade in={true} timeout={2000}>
             <p className="mb-4 text-lg sm:text-xl md:text-2xl">
               I am a Full Stack web developer based in Hanoi, Vietnam. I use
-              Japanese as my second language after my native tongue. I can
-              create a complete Website according to your requirements
+              Japanese and English as my second language after my native tongue.
+              I can create a complete Website according to your requirements
             </p>
           </Fade>
           <Fade in={true} timeout={2500}>
