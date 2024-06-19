@@ -23,7 +23,7 @@ const Contact = () => {
     const templateParams = {
       from_name: name,
       from_email: email,
-      to_name: "Web",
+      to_name: "Mr.Minh",
       message: message,
     };
 
