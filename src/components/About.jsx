@@ -69,6 +69,7 @@ const About = () => {
             <a
               href="https://dminhi.github.io/Portfolio.github.io/CV_Nguyen_Duy_Minh_Full_Stack_Developer.pdf"
               className="bg-cyan-400 text-white px-6 py-2 rounded-full hover:bg-cyan-500 transition duration-300"
+              target="_blank"
             >
               More About Me
             </a>
